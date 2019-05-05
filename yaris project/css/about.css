@@ -1,0 +1,102 @@
+﻿#aboutBackground {
+    background-color: white;
+}
+
+h2,h1,h5 {
+	font-family:Footlight MT Light
+}
+
+#aboutPicture {
+    transform: rotate(90deg);
+    width: 24%;
+    height: 24%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 50px 0;
+}
+
+#shortTextAboutMe {
+    margin: 0;
+    padding: 0;
+}
+
+#expContainer {
+    background-color: white;
+    border: solid silver 0.5px;
+    padding: 20px;
+}
+
+.companyLogoImg {
+    width: 5%;
+    height: 5%;
+    margin: 20px 40px 20px 10px;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    #aboutPicture {
+        margin: 30px 0;
+        transform: rotate(90deg);
+        width: 50%;
+        height: 50%;
+    }
+
+    .companyLogoImg {
+        width: 12%;
+        height: 12%;
+        margin: 20px 40px 20px 10px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    #aboutPicture {
+        margin: 30px 0;
+        transform: rotate(90deg);
+        width: 50%;
+        height: 50%;
+    }
+
+    .companyLogoImg {
+        width: 12%;
+        height: 12%;
+        margin: 20px 40px 20px 10px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    #aboutPicture {
+        margin: 0 0 50px 0;
+        transform: rotate(90deg);
+        width: 50%;
+        height: 50%;
+    }
+
+    .companyLogoImg {
+        width: 15%;
+        height: 15%;
+        margin: 20px 40px 20px 10px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    #aboutPicture {
+        margin: 20px 0 70px 0;
+        transform: rotate(90deg);
+        width: 50%;
+        height: 50%;
+    }
+
+    .companyLogoImg {
+        width: 8%;
+        height: 8%;
+        margin: 20px 40px 20px 10px;
+    }
+}
+
+/*Extra large devices (large desktops)
+ No media query since the extra-large breakpoint has no upper bound on its width
+*/

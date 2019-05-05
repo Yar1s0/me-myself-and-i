@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!--icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8wJeuK18R97EfLKoICQ5W3BHpKym5kbIbIzWewxcknsS7ROM1" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/Hobbies.css" />
+
+    <title>Hobbies.</title>
+</head>
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white"><a href="../Pages/About.html" class="text-white">About</a></h4>
+                        <p class="text-muted">More information about me and my work experience...</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <li><h4><a href="../Pages/Hobbies.html" class="text-white">Hobbies</a></h4></li>
+                            <li><h4><a href="../Pages/Contact.html" class="text-white">Contact</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="../index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>Me, myself and I...</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-sm-12 col-xs-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="hobbieInput">Hobbie</label>
+                                <input type="text" class="form-control" id="hobbieInput" aria-describedby="hobbieHelp" placeholder="My Hobbie">
+                                <small id="hobbieHelp" class="form-text text-muted">Please enter your favorite hobbie.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="descriptionInput">Description</label>
+                                <input type="text" class="form-control" id="descriptionInput" placeholder="Description for the Hobbie">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPriority">Priority</label>
+                                <select id="inputPriority" class="form-control">
+                                    <option value="Low" selected>Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                    <option value="Very High">Very High</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="addRow()">Submit</button>
+                            <button type="button" class="btn btn-danger " onclick="removeAll()">Remove All</button>
+                            <button type="button" class="btn btn-info " onclick="removeAllKeepinitial()">Remove All and Keep Initial</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-5 bg-light">
+            <div class="container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Hobbie</th>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>To eat</td>
+                            <td>High</td>
+                            <td>95% of my thoughts are related to food...</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Coding</td>
+                            <td>Medium</td>
+                            <td>Copy and Paste (hehe)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Read Books</td>
+                            <td>Super high</td>
+                            <td>My best way to escape from this world</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Yarisleydi inc. &copy; 2019</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

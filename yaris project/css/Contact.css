@@ -1,0 +1,64 @@
+﻿h4 {
+    color: orangered;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .infoText {
+        text-align: center;
+    }
+
+    #contactColumn {
+        text-align: center;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+    .infoText {
+        text-align: center;
+        align-content: center;
+    }
+
+    #contactColumn {
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+    .infoText {
+        text-align: center;
+    }
+
+    #contactColumn {
+        text-align: center;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+    #contactColumn {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1199.99px) {
+    #contactColumn {
+        text-align: left;
+    }
+}
+
+#emailBtn {
+    transition: transform 1s linear;
+    transform-origin: center center;
+    transform-style: preserve-3D;
+}
+
+.rotated {
+    transform: rotate(360deg);
+}
+
+#contactColumn .infoText {
+    text-align: left;
+}
